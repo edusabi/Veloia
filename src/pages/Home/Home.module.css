@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+.container {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #050810;
+  color: #ffffff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Efeito de luz de fundo para tirar o aspecto "chapado" */
+.glow {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.15) 0%, rgba(5, 8, 16, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.logo span { color: #22c55e; }
+
+.badge {
+  background: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 10% 120px;
+  position: relative;
+  z-index: 10;
+}
+
+.tagline {
+  color: #22c55e;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.title span {
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #94a3b8;
+  max-width: 650px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.ctaWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.ctaButton {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #fff;
+  padding: 20px 45px;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(34, 197, 94, 0.4);
+}
+
+.socialProof {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 10% 100px;
+}
+
+.featureCard {
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: border 0.3s;
+}
+
+.featureCard:hover {
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.iconBox {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.pricing {
+  padding: 100px 10%;
+  text-align: center;
+  background: rgba(34, 197, 94, 0.02);
+}
+
+.sectionLabel { color: #22c55e; font-weight: 700; font-size: 0.8rem; }
+.sectionTitle { font-size: 2.5rem; margin: 10px 0 50px; font-weight: 800; }
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.priceCard {
+  background: #0f172a;
+  padding: 50px 40px;
+  border-radius: 32px;
+  width: 350px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.featured {
+  border: 2px solid #22c55e;
+  background: #121d33;
+  transform: scale(1.05);
+}
+
+.popularTag {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #22c55e;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.priceValue { margin: 30px 0; }
+.currency { font-size: 1.2rem; vertical-align: top; margin-right: 5px; }
+.amount { font-size: 4rem; font-weight: 800; }
+.period { color: #64748b; }
+
+.benefits {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.benefits li {
+  margin-bottom: 12px;
+  color: #cbd5e1;
+}
+
+.secondaryButton {
+  display: block;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.secondaryButton:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.footer {
+  padding: 60px 10%;
+  text-align: center;
+  color: #475569;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  .featured { transform: scale(1); }
+  .grid { gap: 20px; }
+}
