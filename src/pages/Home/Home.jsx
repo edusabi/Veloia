@@ -11,7 +11,7 @@ const Home = () => {
       <nav className={styles.nav}>
         <h1 className={styles.logo}>Velo<span>ia</span></h1>
         
-        <img src="./favicon.png" width="150px" alt="" />
+        <img src="./favicon.png" width="80px" alt="" />
 
         <div className={styles.badge}>Lançamento Beta</div>
       </nav>
