@@ -10,6 +10,9 @@ const Home = () => {
       
       <nav className={styles.nav}>
         <h1 className={styles.logo}>Velo<span>ia</span></h1>
+        
+        <img src="./favicon.png" alt="" />
+
         <div className={styles.badge}>Lançamento Beta</div>
       </nav>
 
