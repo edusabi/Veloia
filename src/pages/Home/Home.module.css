@@ -97,6 +97,7 @@
 
 .ctaButton {
   background: linear-gradient(135deg, #22c55e, #16a34a);
+  white-space: nowrap;
   color: #fff;
   padding: 20px 45px;
   border-radius: 14px;
