@@ -76,7 +76,7 @@ const Home = () => {
             <h4>Business Pro</h4>
             <div className={styles.priceValue}>
               <span className={styles.currency}>R$</span>
-              <span className={styles.amount}>99</span>
+              <span className={styles.amount}>99.99</span>
               <span className={styles.period}>/mês</span>
             </div>
             <ul className={styles.benefits}>
