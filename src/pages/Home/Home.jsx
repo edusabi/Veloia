@@ -60,7 +60,7 @@ const Home = () => {
             <h4>Starter</h4>
             <div className={styles.priceValue}>
               <span className={styles.currency}>R$</span>
-              <span className={styles.amount}>29</span>
+              <span className={styles.amount}>49,99</span>
               <span className={styles.period}>/mês</span>
             </div>
             <ul className={styles.benefits}>
